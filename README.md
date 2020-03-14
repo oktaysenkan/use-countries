@@ -14,7 +14,7 @@ yarn add use-countries
 
 ## Usage
 
-```js
+```jsx
 import useCountries from "use-countries";
 const {
   countries,
@@ -24,4 +24,35 @@ const {
   language,
   setLanguage
 } = useCountries();
+```
+
+```js
+<select onChange={languagesOnChanged}>
+  {countries.map(item => (
+    <option value={item.code}>{item.name}</option>
+  ))}
+</select>
+```
+
+### Country
+
+```json
+{
+  "code": "AD",
+  "name": "Andorra",
+  "native": "Andorra",
+  "phone": "376",
+  "continent": "EU",
+  "capital": "Andorra la Vella",
+  "currency": "EUR",
+  "languages": ["ca"],
+  "emoji": "🇦🇩",
+  "emojiU": "U+1F1E6 U+1F1E9"
+}
+```
+
+### Language
+
+```json
+{ "code": "AA", "name": "Afar", "native": "Afar" }
 ```
