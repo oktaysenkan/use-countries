@@ -8,6 +8,7 @@
     "test": "jest --coverage --runInBand"
   },
   "author": "Oktay Şenkan <oktay.senkan@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oktaysenkan/use-countries.git"
