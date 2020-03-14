@@ -27,7 +27,7 @@ const {
 ```
 
 ```js
-<select onChange={languagesOnChanged}>
+<select onChange={handleCountryChange}>
   {countries.map(item => (
     <option value={item.code}>{item.name}</option>
   ))}
