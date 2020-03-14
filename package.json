@@ -1,13 +1,28 @@
 {
   "name": "use-countries",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Custom react hook to list countries and languages",
+  "main": "./dist/useCountries.js",
+  "types": "./dist/useCountries.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --runInBand"
   },
-  "author": "Oktay Şenkan",
-  "license": "ISC",
+  "author": "Oktay Şenkan <oktay.senkan@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oktaysenkan/use-countries.git"
+  },
+  "homepage": "https://github.com/oktaysenkan/use-countries#readme",
+  "bugs": {
+    "url": "https://github.com/oktaysenkan/use-countries/issues"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "javascript",
+    "countries",
+    "languages"
+  ],
   "dependencies": {
     "@types/jest": "^25.1.4",
     "countries-list": "2.5.4",
