@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/jest": "^25.1.4",
+    "countries-list": "2.5.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },

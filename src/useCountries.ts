@@ -1,19 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import locales, { Country, Language } from "./locales";
 
 const useCountries = () => {
-  const [countries, setCountries] = useState<string[]>([]);
-  const [country, setCountry] = useState("Turkey");
+  const countries = locales.countries;
+  const languages = locales.languages;
+  const [country, setCountry] = useState<Country>(locales.countries[0]);
+  const [language, setLanguage] = useState<Language>(locales.languages[0]);
 
-  useEffect(() => {
-    setCountries([
-      "1",
-      "2",
-      "3",
-      "4",
-    ])
-  }, []);
-
-  return {countries, country, setCountry};
+  return { countries, languages, country, setCountry, language, setLanguage };
 };
 
 export default useCountries;
