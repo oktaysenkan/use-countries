@@ -2,10 +2,12 @@
   "name": "use-countries",
   "version": "0.1.0",
   "description": "Custom react hook to list countries and languages",
-  "main": "./dist/useCountries.js",
-  "types": "./dist/useCountries.d.ts",
+  "main": "dist/useCountries.js",
+  "types": "dist/useCountries.d.ts",
   "scripts": {
-    "test": "jest --coverage --runInBand"
+    "build": "tsc",
+    "test": "jest --coverage --runInBand",
+    "prepublish": "tsc"
   },
   "author": "Oktay Şenkan <oktay.senkan@gmail.com>",
   "license": "MIT",
