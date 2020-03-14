@@ -1,6 +1,6 @@
 {
   "name": "use-countries",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Custom react hook to list countries and languages",
   "main": "dist/useCountries.js",
   "types": "dist/useCountries.d.ts",
@@ -26,11 +26,12 @@
     "countries",
     "languages"
   ],
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
   "dependencies": {
     "@types/jest": "^25.1.4",
-    "countries-list": "2.5.4",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "countries-list": "2.5.4"
   },
   "devDependencies": {
     "@testing-library/react-hooks": "^3.2.1",
